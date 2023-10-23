@@ -97,6 +97,7 @@ namespace WPEFramework {
             uint32_t getMediaTrackInfoWrapper(const JsonObject& parameters, JsonObject& response);
             uint32_t getDeviceVolumeMuteInfoWrapper(const JsonObject& parameters, JsonObject& response);
             uint32_t setDeviceVolumeMuteInfoWrapper(const JsonObject& parameters, JsonObject& response);
+
             // Registered methods end
 
         private: /*internal methods*/

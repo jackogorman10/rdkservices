@@ -807,6 +807,7 @@ namespace WPEFramework
                 deviceDetails["MAC"] = string(deviceProperty.m_deviceAddress);
                 deviceDetails["signalStrength"] = std::to_string(deviceProperty.m_signalLevel);
                 deviceDetails["rssi"] =  std::to_string(deviceProperty.m_rssi);
+                deviceDetails["batteryLevel"] =  std::to_string(deviceProperty.m_batteryLevel);
                 for (int i = 0; i < deviceProperty.m_serviceInfo.m_numOfService; i++)
                 {
                     profileInfo += string(deviceProperty.m_serviceInfo.m_profileInfo[i].m_profile);
