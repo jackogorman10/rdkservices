@@ -282,7 +282,7 @@ namespace WPEFramework
                     LOGERR("Failed to get the number of adapters..!");
 
                 if (numOfAdapters) {
-                    BTRMGR_DeviceOperationType_t lenDevOpDiscType = BTRMGR_DEVICE_OP_TYPE_AUDIO_OUTPUT;
+                    BTRMGR_DeviceOperationType_t lenDevOpDiscType = BTRMGR_DEVICE_OP_TYPE_UNKNOWN;
 
                     if (Utils::String::contains(discProfile, "LOUDSPEAKER") ||
                         Utils::String::contains(discProfile, "HEADPHONES") ||
