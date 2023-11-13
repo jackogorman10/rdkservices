@@ -60,9 +60,14 @@
             "example":"E8:FB:E9:0C:XX:80"
         },
         "rawDeviceType": {
-            "summary": "Bluetooth device class as hex code",
+            "summary": "Bluetooth device class",
             "type": "string",
-            "example": "0x060104"
+            "example": "2360344"
+        },
+        "rawBleDeviceType": {
+            "summary": "Bluetooth device appearance",
+            "type": "string",
+            "example": "180"
         },
         "lastConnectedState": {
             "summary": "Whether the device was last to connect. Only the last connected device has a value of `true`.",
@@ -951,6 +956,9 @@
                     "rawDeviceType": {
                         "$ref": "#/definitions/rawDeviceType"
                     },
+                    "rawBleDeviceType": {
+                        "$ref": "#/definitions/rawBleDeviceType"
+                    },
                     "lastConnectedState": {
                         "$ref": "#/definitions/lastConnectedState"
                     },
@@ -966,6 +974,7 @@
                     "name",
                     "deviceType",
                     "rawDeviceType",
+                    "rawBleDeviceType",
                     "lastConnectedState",
                     "paired"
                 ]
@@ -1157,6 +1166,9 @@
                     "rawDeviceType": {
                         "$ref": "#/definitions/rawDeviceType"
                     },
+                    "rawBleDeviceType": {
+                        "$ref": "#/definitions/rawBleDeviceType"
+                    },
                     "lastConnectedState": {
                         "$ref": "#/definitions/lastConnectedState"
                     },
@@ -1175,6 +1187,7 @@
                     "name",
                     "deviceType",
                     "rawDeviceType",
+                    "rawBleDeviceType",
                     "lastConnectedState",
                     "paired",
                     "connected"
@@ -1201,6 +1214,9 @@
                     "rawDeviceType": {
                         "$ref": "#/definitions/rawDeviceType"
                     },
+                    "rawBleDeviceType": {
+                        "$ref": "#/definitions/rawBleDeviceType"
+                    },
                     "lastConnectedState": {
                         "$ref": "#/definitions/lastConnectedState"
                     },
@@ -1219,6 +1235,7 @@
                     "name",
                     "deviceType",
                     "rawDeviceType",
+                    "rawBleDeviceType",
                     "lastConnectedState",
                     "paired",
                     "connected"
@@ -1242,6 +1259,9 @@
                     "rawDeviceType": {
                         "$ref": "#/definitions/rawDeviceType"
                     },
+                    "rawBleDeviceType": {
+                        "$ref": "#/definitions/rawBleDeviceType"
+                    },
                     "lastConnectedState": {
                         "$ref": "#/definitions/lastConnectedState"
                     }
@@ -1251,6 +1271,7 @@
                     "name",
                     "deviceType",
                     "rawDeviceType",
+                    "rawBleDeviceType",
                     "lastConnectedState"
                 ]
             }
@@ -1272,6 +1293,9 @@
                     "rawDeviceType": {
                         "$ref": "#/definitions/rawDeviceType"
                     },
+                    "rawBleDeviceType": {
+                        "$ref": "#/definitions/rawBleDeviceType"
+                    },
                     "lastConnectedState": {
                         "$ref": "#/definitions/lastConnectedState"
                     }
@@ -1281,6 +1305,7 @@
                     "name",
                     "deviceType",
                     "rawDeviceType",
+                    "rawBleDeviceType",
                     "lastConnectedState"
                 ]
             }
